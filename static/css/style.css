@@ -1,0 +1,49 @@
+
+h1 {
+    color: #0A9FA2;
+}
+
+h1.s_title_default {
+    font-size: 52px;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+h2 {
+
+}
+
+h2.o_default_snippet_text {
+    
+}
+
+a.nav-link {
+    font-size: 20px;
+    color: #EAEAEA;
+}
+
+a.nav-link.active {
+    color: #13D5C4;
+    border-bottom-color: currentcolor;
+}
+
+#footer h5 {
+    color: #0D8485;
+}
+
+.services {
+    background: #EAEAEA;
+    padding: 1em;
+    margin: 2em 0 3em;
+}
+
+.services li {
+    display: block;
+    position: relative;
+    background-color: #16a085;
+    color: #FFF;
+    padding: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
