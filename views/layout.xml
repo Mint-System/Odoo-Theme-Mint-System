@@ -4,19 +4,32 @@
     <!-- Customize header  -->
     <template id="custom_header" inherit_id="website.layout" name="Custom Header">
 
-    <!-- Assign an id  -->
-    <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-        <attribute name="id">my_header</attribute>
-    </xpath>
+        <!-- Assign an id  -->
+        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
+            <attribute name="id">my_header</attribute>
+        </xpath>
 
-    <!-- Add an element after the top menu  -->
-    <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
-        <div class="container">
-        <div class="alert alert-info mt16" role="alert">
-            <strong>Welcome</strong> in our website!
-        </div>
-        </div>
-    </xpath>
+        <!-- Add an element after the top menu  -->
+        <xpath expr="//div[@id='wrapwrap']/header/nav" position="after">
+            <div class="container">
+                <div class="alert alert-info mt16" role="alert">
+                    <strong>Welcome</strong> in our website!
+                </div>
+            </div>
+        </xpath>
+
+    </template>
+
+    <!-- Customize footer  -->
+    <template id="footer_custom" inherit_id="website.layout" name="Footer">
+        <xpath expr="//footer/div[1]/section" position="before">
+            <div class="container">
+                <div class="alert alert-info mt16" role="alert">
+                    <strong>Welcome</strong> in our website!
+                </div>
+                <div class="oe_structure" />
+            </div>
+        </xpath>
     </template>
 
 </odoo>

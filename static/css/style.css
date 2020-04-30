@@ -1,35 +1,113 @@
 
-h1 {
-    color: #0A9FA2;
+/* Font import */
+
+@font-face {
+    font-family: "RubrikEdgeNewRegular";
+    src:url(/theme_mint_system/static/otf/RubrikEdgeNewRegular.otf) format("opentype");
+}
+@font-face {
+    font-family: "RubrikEdgeNewBold";
+    font-weight: bold;
+    src:url(/theme_mint_system/static/otf/RubrikEdgeNewBold.otf) format("opentype");
+}
+@font-face {
+    font-family: "RubrikEdgeNewLight";
+    font-weight: lighter;
+    src:url(/theme_mint_system/static/otf/RubrikEdgeNewLight.otf) format("opentype");
+}
+
+/* Override fonts */
+
+p.s_title_default {
+    font-size: 24px;
+    font-family: RubrikEdgeNewRegular;
+    line-height: 28px;
+    color: #202020;
 }
 
 h1.s_title_default {
+    /* text-transform: uppercase;
+    padding-bottom: 1em; */
+    color: #0A9FA2;
+    font-family: RubrikEdgeNewRegular;
     font-size: 52px;
+    line-height: 62px;
     text-transform: uppercase;
-    padding-bottom: 1em;
 }
 
-h2 {
-
+h1.s_title_default b {
+    /* text-transform: uppercase;
+    padding-bottom: 1em; */
+    font-family: RubrikEdgeNewBold;
 }
 
-h2.o_default_snippet_text {
-    
+h1.s_title_thin {
+    /* text-transform: uppercase;
+    padding-bottom: 1em; */
+    color: #0A9FA2;
+    font-family: RubrikEdgeNewLight;
+    font-size: 52px;
+    line-height: 62px;
+    text-transform: uppercase;
 }
 
-a.nav-link {
+/* Override cover */
+
+section.s_cover p {
+    font-size: 18px;
+    color: #EAEAEA;
+    text-transform: uppercase;
+    font-family: RubrikEdgeNewRegular;
+}
+
+section.s_cover h1 {
+    color: #FFFFFF;
+    font-size: 58px;
+    line-height: 57px;
+    text-transform: none;
+}
+
+/* Override navbar */
+
+.navbar-light .navbar-nav .nav-link {
     font-size: 20px;
     color: #EAEAEA;
 }
 
-a.nav-link.active {
+.navbar-light .navbar-nav .nav-link.active {
     color: #13D5C4;
-    border-bottom-color: currentcolor;
+    border-bottom-color: #13D5C4;
 }
+
+#wrapwrap.o_header_overlay > header:not(.o_header_affix) > .navbar .nav-item > .nav-link {
+    color: #EAEAEA;
+}
+
+#wrapwrap.o_header_overlay > header:not(.o_header_affix) > .navbar .nav-item > .nav-link.active {
+    color: #13D5C4;
+    border-bottom-color: #13D5C4;
+}
+
+header#my_header div.navbar-collapse {
+    padding-top: 50px;
+}
+
+.o_header_affix {
+    background: none;
+}
+
+/* Override footer */
 
 #footer h5 {
     color: #0D8485;
 }
+
+body {
+    background-image: url("/theme_mint_system/static/img/background.jpg");
+    background-repeat: repeat;
+}
+
+/* Test */
 
 .services {
     background: #EAEAEA;
