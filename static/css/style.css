@@ -16,39 +16,71 @@
     src:url(/theme_mint_system/static/otf/RubrikEdgeNewLight.otf) format("opentype");
 }
 
-/* Override fonts */
+/* Override typography */
 
-p.s_title_default {
-    font-size: 24px;
-    font-family: RubrikEdgeNewRegular;
-    line-height: 28px;
-    color: #202020;
+.rounded {
+    border-radius: 1rem !important;
 }
 
-h1.s_title_default {
-    /* text-transform: uppercase;
-    padding-bottom: 1em; */
+/* Override global */
+
+h1 {
     color: #0A9FA2;
     font-family: RubrikEdgeNewRegular;
-    font-size: 52px;
+    font-size: 58px;
     line-height: 62px;
     text-transform: uppercase;
 }
 
-h1.s_title_default b {
-    /* text-transform: uppercase;
-    padding-bottom: 1em; */
+h1 b {
     font-family: RubrikEdgeNewBold;
 }
 
 h1.s_title_thin {
-    /* text-transform: uppercase;
-    padding-bottom: 1em; */
+    font-family: RubrikEdgeNewLight;
+}
+
+h2 {
     color: #0A9FA2;
     font-family: RubrikEdgeNewLight;
     font-size: 52px;
     line-height: 62px;
     text-transform: uppercase;
+}
+
+h3 {
+    color: #0A9FA2;
+    font-family: RubrikEdgeNewLight;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+p {
+    font-size: 18px;
+    font-family: RubrikEdgeNewRegular;
+    line-height: 28px;
+    color: #202020;
+}
+
+a {
+    font-size: 18px;
+    font-family: RubrikEdgeNewRegular;
+    line-height: 28px;
+    color: #202020;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Override feature */
+
+section.s_features img {
+    padding-bottom: 20px;
+}
+
+section.s_features a {
+    border-bottom: #13D5C4 solid 2px;
 }
 
 /* Override cover */
@@ -62,9 +94,21 @@ section.s_cover p {
 
 section.s_cover h1 {
     color: #FFFFFF;
-    font-size: 58px;
     line-height: 57px;
     text-transform: none;
+}
+
+/* Override text image */
+
+section.s_text_image h1 {
+    text-transform: none;
+    font-family: RubrikEdgeNewLight;
+}
+
+@media (min-width: 992px) {
+    section.s_text_image div.row > div {
+        padding-right: 30px;
+    }
 }
 
 /* Override navbar */
@@ -102,10 +146,10 @@ header#my_header div.navbar-collapse {
     color: #0D8485;
 }
 
-body {
+/* body {
     background-image: url("/theme_mint_system/static/img/background.jpg");
     background-repeat: repeat;
-}
+} */
 
 /* Test */
 

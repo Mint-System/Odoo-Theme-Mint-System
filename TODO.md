@@ -3,12 +3,15 @@
 ## Design
 
 - [ ] Set bubbles background
+- [ ] Animate links
 
 ## Functional
 
 - [ ] Add block insert space above footer
 - [ ] JavaScript to set onepage anchor as active menu
 
-## Snippt
+## Snippet
 
-- [ ] Create custom cover snippet without background image.
+- [-] Create custom cover snippet without background image.
+- [ ] Create a section block that can contain two blocks
+- [ ] Install theme_common snippets
