@@ -2,17 +2,38 @@
 
 ## Design
 
-- [ ] Set bubbles background
-- [ ] Animate links
+- [ ] Animate links from dot to full butotn
+- [ ] Apply border bottom to menu span tag instead a
+- [ ] Icrease gab between menu items
+- [ ] Create draft for contact form
+- [ ] Increase bottom and top margin for text_form heading
+- [ ] Override .shadow with default shadow
+- [ ] Styling Kontaktformular
+- [ ] Remove border from burger menu
+- [ ] Mobile nav should fill the page with semi transparent background
+- [ ] Style text_image
+
+## Content
+
+- [ ] Update contact page: submit text and Google Maps
 
 ## Functional
 
-- [ ] Add block insert space above footer
 - [ ] JavaScript to set onepage anchor as active menu
+- [ ] Remove odoo promotion
+- [ ] Scroll link with arrows
 
 ## Snippet
 
-- [-] Create custom cover snippet without background image.
-- [ ] Create a section block that can contain two blocks
+- [ ] Insert two column layout for offer sites
 - [ ] Install theme_common snippets
-- [ ] Create a block that inserts a contact form
+
+## Bugs
+
+- [ ] Insertin text_form triggers params form 4x times
+
+# DONE
+
+- [-] Create custom cover snippet without background image.
+- [x] Add block insert space above footer
+- [x] Create a block that inserts a contact form
