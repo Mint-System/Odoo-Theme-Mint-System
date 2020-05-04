@@ -12,6 +12,8 @@
 - [ ] Remove border from burger menu
 - [ ] Mobile nav should fill the page with semi transparent background
 - [ ] Style text_image
+- [ ] Decrease footer max-width 996px with media quey
+- [ ] Button font type bold
 
 ## Content
 
