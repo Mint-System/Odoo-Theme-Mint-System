@@ -15,3 +15,4 @@
 - [-] Create custom cover snippet without background image.
 - [ ] Create a section block that can contain two blocks
 - [ ] Install theme_common snippets
+- [ ] Create a block that inserts a contact form

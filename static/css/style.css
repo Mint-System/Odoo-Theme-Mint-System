@@ -22,6 +22,16 @@
     border-radius: 1rem !important;
 }
 
+/* Override button */
+
+.btn-primary {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    background-color: #13D5C4;
+    box-shadow: 20px 20px 60px #00000066;
+}
+
 /* Override global */
 
 h1 {
@@ -76,7 +86,8 @@ a:hover {
 /* Override feature */
 
 section.s_features img {
-    padding-bottom: 20px;
+    box-shadow: 20px 20px 60px #00000029;
+    margin-bottom: 20px;
 }
 
 section.s_features a {
@@ -86,13 +97,29 @@ section.s_features a {
 /* Override cover */
 
 section.s_cover p {
-    font-size: 18px;
     color: #EAEAEA;
     text-transform: uppercase;
     font-family: RubrikEdgeNewRegular;
 }
 
 section.s_cover h1 {
+    color: #FFFFFF;
+    line-height: 57px;
+    text-transform: none;
+}
+
+/* Override text form */
+
+section.s_text_form p {
+    color: #EAEAEA;
+}
+
+section.s_text_form p:first-child {
+    text-transform: uppercase;
+    font-family: RubrikEdgeNewRegular;
+}
+
+section.s_text_form h1 {
     color: #FFFFFF;
     line-height: 57px;
     text-transform: none;
@@ -120,7 +147,7 @@ section.s_text_image h1 {
 
 .navbar-light .navbar-nav .nav-link.active {
     color: #13D5C4;
-    border-bottom-color: #13D5C4;
+    border-bottom: #13D5C4 solid 2px;
 }
 
 #wrapwrap.o_header_overlay > header:not(.o_header_affix) > .navbar .nav-item > .nav-link {
@@ -129,7 +156,7 @@ section.s_text_image h1 {
 
 #wrapwrap.o_header_overlay > header:not(.o_header_affix) > .navbar .nav-item > .nav-link.active {
     color: #13D5C4;
-    border-bottom-color: #13D5C4;
+    border-bottom: #13D5C4 solid 2px;
 }
 
 header#my_header div.navbar-collapse {
@@ -144,6 +171,11 @@ header#my_header div.navbar-collapse {
 
 #footer h5 {
     color: #0D8485;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 22px;
 }
 
 /* body {
