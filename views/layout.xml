@@ -12,15 +12,17 @@
     </template>
 
     <!-- Customize footer  -->
-    <template id="footer_custom" inherit_id="website.layout" name="Footer">
+    <template id="custom_footer" inherit_id="website.layout" name="Footer">
 
         <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
             <attribute name="id">my_footer</attribute>
         </xpath>
 
-        <xpath expr="//div[@id='footer']" position="before">
+        <xpath expr="//div[@id='footer']/section" position="before">
             <div class="container">
-                <div class="oe_structure oe_empty" />
+                <!-- <div class="oe_structure">
+                    <p>Insert logo here</p>
+                </div> -->
             </div>
         </xpath>
     </template>

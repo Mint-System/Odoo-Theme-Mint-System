@@ -47,16 +47,6 @@
                         
                         <form action="/website_form/" method="post" class="s_website_form container-fluid mt32 o_fake_not_editable" enctype="multipart/form-data" data-name="Form Builder" data-model_name="mail.mail" data-success_page="/contactus-thank-you">
                             <div class="container">
-                            <!-- <div class="row form-group form-field d-none">
-                                <div class="col-lg-3 col-md-4">
-                                <label class="col-form-label" for="email_to">
-                                        
-                                    </label>
-                                </div>
-                                <div class="col-lg-7 col-md-8">
-                                <input type="text" class="form-control o_website_form_input" name="email_to" value="janik.vonrotz@mint-system.ch"></input>
-                                </div>
-                            </div> -->
                             <div class="form-group row form-field o_website_form_custom o_website_form_required_custom o_fake_not_editable">
                                 <div class="col-lg-3 col-md-4">
                                 <label class="col-form-label o_fake_editable" for="Ihr Name">Ihr Name</label>
@@ -99,6 +89,12 @@
     <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
         <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
             <t t-snippet="theme_mint_system.s_text_form" t-thumbnail="/website/static/src/img/snippets_thumbs/s_text_image.png"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_selection" inherit_id="website.snippets">
+        <xpath expr="//div[@id='snippet_structure']/div[hasclass('o_panel_body')]/t[@t-snippet='website.s_cover']" position="after">
+            <t t-snippet="theme_common.s_two_columns" t-thumbnail="/theme_common/static/src/img/snippets/s_two_columns.png"/>
         </xpath>
     </template>
 
