@@ -8,26 +8,36 @@
 - [ ] Override img.shadow with default shadow
 - [ ] Style Kontaktformular
 - [ ] Mobile nav should fill the page with semi transparent background
-- [ ] Hover effects for all link
+- [ ] Button hover effect
 
 ## Content
 
-- [ ] Update contact page: submit text and Google Maps
+- [ ] Update contact page: form field, submit text and Google Maps
 - [ ] Add icons
+- [ ] Update contact form mail address
+- [ ] Set logo and favicon
+- [ ] Init blog
 
 ## Functional
 
 - [ ] JavaScript to set onepage anchor as active menu
-- [ ] Remove odoo promotion
 - [ ] Scroll link with arrows
+- [ ] Disable google maps link
 
 ## Bugs
 
-- [ ] Background vanishes on mobile browsers
-- [ ] Insertin text_form triggers params form 4x times
+- [ ] Inserting text_form triggers params form 4x times
 
 # DONE
 
+- [x] Hover effects for all link
+- [x] Style inverted links
+- [x] Add style option to s_image_text and s_text_image for inverted
+- [x] Remove link text-decoration from footer
+- [x] Enable google analytics
+- [x] Register unsplash
+- [x] Background vanishes on mobile browsers -> Url pointed to localhost
+- [x] Remove odoo promotion
 - [x] Remove button border
 - [x] Remove border from burger menu
 - [x] Style text_image

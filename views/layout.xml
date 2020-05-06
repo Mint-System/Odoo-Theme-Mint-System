@@ -27,4 +27,14 @@
         </xpath>
     </template>
 
+
+    <!-- Override brand promotion  -->
+    <template id="brand_promotion" inherit_id="web.brand_promotion" name="Brand Promotion">
+
+        <!-- Clear brand promotion message -->
+        <xpath expr="//t[@t-call='web.brand_promotion_message']" position="replace">
+        </xpath>
+
+    </template>
+
 </odoo>

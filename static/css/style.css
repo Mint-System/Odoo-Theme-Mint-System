@@ -28,7 +28,8 @@ img.shadow {
 
 /* Override button */
 
-.btn-primary, .btn.rounded-circle {
+.btn-primary,
+.btn.rounded-circle {
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
@@ -94,14 +95,22 @@ p {
     color: #202020;
 }
 
-header a, main a {
+p > a {
+    border-bottom: #13D5C4 solid 2px;
+}
+
+header a,
+main a {
     font-size: 18px;
     font-family: RubrikEdgeNewRegular;
     line-height: 28px;
     color: #202020;
 }
 
-header a:hover, main a:hover {
+header a:hover,
+main a:hover,
+footer a:hover {
+    color: #13D5C4;
     text-decoration: none;
 }
 
@@ -132,24 +141,32 @@ section.s_cover h1 {
 
 /* Override text form */
 
-section.s_text_form p {
-    color: #EAEAEA;
+section.s_text_form h1,
+section.s_text_form h3,
+section.s_text_form h4,
+section.s_text_form p,
+section.s_text_form a {
+    color: #FFFFFF;
+}
+
+section.s_text_form a:hover {
+    color: #13D5C4;
 }
 
 section.s_text_form p:first-child {
+    color: #EAEAEA;
     text-transform: uppercase;
     font-family: RubrikEdgeNewRegular;
 }
 
 section.s_text_form h1 {
-    color: #FFFFFF;
-    line-height: 57px;
     text-transform: none;
 }
 
 /* Override text image */
 
-section.s_text_image h1, section.s_image_text h1 {
+section.s_text_image h1, 
+section.s_image_text h1 {
     text-transform: none;
     font-family: RubrikEdgeNewLight;
 }
@@ -177,18 +194,13 @@ section.s_text_image h1, section.s_image_text h1 {
     padding-bottom: 0.2rem;
 }
 
-/* #wrapwrap.o_header_overlay > header:not(.o_header_affix) > .navbar .nav-item > .nav-link {
-    color: #EAEAEA;
-}
-
-#wrapwrap.o_header_overlay > header:not(.o_header_affix) > .navbar .nav-item > .nav-link.active {
-    color: #13D5C4;
-    border-bottom: #13D5C4 solid 2px;
-} */
-
 .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link span:hover {
+    color: #13D5C4;
 }
 
 header#my_header div.navbar-collapse {
@@ -221,4 +233,13 @@ footer p {
     div#footer section.s_text_block .container {
         max-width: 996px;
     }
+}
+
+/* Add section style */
+
+section.style-inverted h1,
+section.style-inverted h2,
+section.style-inverted h3,
+section.style-inverted p {
+    color: #FFFFFF
 }

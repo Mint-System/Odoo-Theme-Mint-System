@@ -2,34 +2,12 @@
 
 ## Usage
 
-Install the design.
+Download release from the GitHub page.
 
-### Manual Settings
+Unzip the archive on the Odoo server and install the theme like any other Odoo module.
 
-* Set navbar background to transparent.
-* Set links for LinkedIn and GitHub.
-* Set  website title.
-* Add cover below menu and set background image height to 0.
-* Adjust Logo height.
+### Release
 
-## Docs
-
-**assets**
-
-Load theme css.
-
-**customize**
-
-Update theme customize options.
-
-**layout**
-
-Sets website layout.
-
-**pages**
-
-Creates specific pages.
-
-**snippets**
-
-Edit mode snippets.
+* Bump version in `__manifest__.py`.
+* Commit the changes.
+* Create a new release on GitHub.
