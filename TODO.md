@@ -2,13 +2,12 @@
 
 ## Design
 
-- [ ] Animate links from dot to full butotn
-- [ ] Create draft for contact form
+
 - [ ] Increase bottom and top margin for text_form heading
-- [ ] Override img.shadow with default shadow
 - [ ] Style Kontaktformular
-- [ ] Mobile nav should fill the page with semi transparent background
-- [ ] Button hover effect
+- [ ] Try to define a overflow background for Unser Angebot
+- [ ] Menu toolbar should show up earlier
+- [ ] Set background images
 
 ## Content
 
@@ -17,6 +16,7 @@
 - [ ] Update contact form mail address
 - [ ] Set logo and favicon
 - [ ] Init blog
+- [ ] Create offer subsites
 
 ## Functional
 
@@ -26,10 +26,20 @@
 
 ## Bugs
 
+- [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css
 - [ ] Inserting text_form triggers params form 4x times
 
 # DONE
 
+- [x] Override img.shadow with default shadow
+- [x] Animate links from dot to full button
+- [-] Create draft for contact form
+- [-] Mobile nav should fill the page with semi transparent background
+- [x] Button hover effect
+- [x] Link hover effect
+- [x] use css variables
+- [x] Update typography
+- [x] nav border bottom 3px
 - [x] Hover effects for all link
 - [x] Style inverted links
 - [x] Add style option to s_image_text and s_text_image for inverted
