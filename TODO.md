@@ -10,7 +10,6 @@
 - [ ] Update contact page: form field, submit text and Google Maps
 - [ ] Add icons to odoo page
 - [ ] Update contact form mail address
-- [ ] Set logo and favicon
 - [ ] Init blog
 - [ ] Create offer subsites
 
@@ -27,6 +26,7 @@
 
 # DONE
 
+- [x] Set logo and favicon
 - [x] setup logo
 - [x] Increase bottom and top margin for text_form heading
 - [x] Style Kontaktformular
