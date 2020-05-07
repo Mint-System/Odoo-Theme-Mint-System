@@ -19,6 +19,8 @@
     --link-border-hover-color: #202020;
     --link-dot-color: #13D5C4;
     --link-dot-hover-color: #13D5C4;
+    --form-input-border-color: #CCCCCC;
+    --form-input-focus-hue: #0000001A;
 
     /* sizes */
     --link-border-size: 1px;
@@ -32,14 +34,19 @@
     --font-size-text-small: 14px;
     --font-size-nav: 20px;
     --font-size-button: 16px;
+    --form-input-border-size: 1px;
 
     /* breakpoints */
-
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
+
+    /* radius */
+    --default-border-radius: 1rem;
+    --button-border-radius: 2rem;
+    --form-input-border-radius: 5px;
 }
 
 /* Font import */
@@ -62,7 +69,7 @@
 /* Override typography */
 
 .rounded {
-    border-radius: 1rem !important;
+    border-radius: var(--default-border-radius) !important;
 }
 
 img.shadow {
@@ -144,6 +151,11 @@ p {
     line-height: 24px;
 }
 
+address {
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text);
+}
+
 /* links */
 
 p > a {
@@ -180,7 +192,7 @@ a.btn-outline-primary:hover {
     color: var(--text-inverted-color);
     background-color: var(--button-background-color);
     border: none;
-    border-radius: 30px;
+    border-radius: var(--button-border-radius);
     transition: none;
     margin-top: 5px;
     margin-left: 20px;
@@ -189,7 +201,7 @@ a.btn-outline-primary:hover {
 a.btn-outline-primary::before {
     content: '';
     display: inline-block;
-    border-radius: 20px;
+    border-radius: var(--button-border-radius);
     height: 40px;
     width: 40px;
     background-color: var(--button-background-color);
@@ -253,6 +265,75 @@ section.s_text_form h1 {
     text-transform: none;
 }
 
+section.s_text_form form.s_website_form {
+    background: #fff;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: var(--default-border-radius);
+    box-shadow: 20px 20px 60px var(--shadow-hue);
+}
+
+section.s_text_form label.col-form-label {
+    font-size: var(--font-size-text-small);
+}
+
+section.s_text_form textarea.form-control,
+section.s_text_form input.form-control {
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text-small);
+    padding: 30px;
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    border-radius: var(--form-input-border-radius);
+}
+
+section.s_text_form textarea.form-control:focus,
+section.s_text_form input.form-control:focus {
+    border: var(--form-input-border-size) solid var(--form-input-border-color);
+    box-shadow: 0px 10px 20px var(--form-input-focus-hue);
+}
+
+section.s_text_form input.form-control {
+    height: 75px;
+}
+
+section.s_text_form textarea.form-control {
+    height: 200px;
+}
+
+section.s_text_form button.o_website_form_send {
+    border-radius: var(--button-border-radius);
+    text-transform: none;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    section.s_text_form form.s_website_form {
+        padding-right: 90px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    section.s_text_form label.col-form-label {
+        margin-top: 15px;
+    }
+
+    section.s_text_form div.form-group {
+        text-align: right;
+    }
+
+    section.s_text_form div.form-group:last-child {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+    section.s_text_form div.form-group:last-child {
+        text-align: center;
+    }
+}
+
 /* Override text image */
 
 section.s_text_image h1, 
@@ -261,9 +342,9 @@ section.s_image_text h1 {
     font-family: RubrikEdgeNewLight;
 }
 
-@media (min-width: var(--breakpoint-lg)) {
+@media (min-width: 992px) {
     section.s_text_image div.row > div {
-        padding-right: 30px;
+        padding-right: 60px;
     }
 }
 

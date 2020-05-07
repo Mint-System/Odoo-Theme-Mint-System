@@ -2,17 +2,13 @@
 
 ## Design
 
-
-- [ ] Increase bottom and top margin for text_form heading
-- [ ] Style Kontaktformular
-- [ ] Try to define a overflow background for Unser Angebot
 - [ ] Menu toolbar should show up earlier
-- [ ] Set background images
+- [ ] change burger menu color
 
 ## Content
 
 - [ ] Update contact page: form field, submit text and Google Maps
-- [ ] Add icons
+- [ ] Add icons to odoo page
 - [ ] Update contact form mail address
 - [ ] Set logo and favicon
 - [ ] Init blog
@@ -31,6 +27,11 @@
 
 # DONE
 
+- [x] setup logo
+- [x] Increase bottom and top margin for text_form heading
+- [x] Style Kontaktformular
+- [-] Try to define a overflow background for Unser Angebot
+- [x] Set background images
 - [x] Override img.shadow with default shadow
 - [x] Animate links from dot to full button
 - [-] Create draft for contact form
