@@ -8,6 +8,7 @@
     --text-dark-color: #202020;
     --text-normal-color: #CCCCCC;
     --text-light-color: #EAEAEA;
+    --text-grey-color: #B9B9BA;
     --text-inverted-color: #ffffff;
     --shadow-hue: #00000066;
     --button-background-color: #13D5C4;
@@ -25,15 +26,16 @@
     /* sizes */
     --link-border-size: 1px;
     --nav-border-size: 3px;
-    --font-size-header1: 58px;
-    --font-size-header2: 52px;
-    --font-size-header3: 30px;
-    --font-size-header4: 24px;
-    --font-size-header5: 18px;
-    --font-size-text: 18px;
-    --font-size-text-small: 14px;
-    --font-size-nav: 20px;
-    --font-size-button: 16px;
+    --font-size-header1: 3rem; /* 48px */
+    --font-size-header2: 2.5rem; /* 40px */
+    --font-size-header3: 1.875rem; /* 30px */
+    --font-size-header4: 1.5rem; /* 24px */
+    --font-size-header5: 1.125rem; /* 18px */
+    --font-size-header6: 1.125rem; /* 18px */
+    --font-size-text: 1.125rem; /* 18px */
+    --font-size-text-small: 0.875rem; /* 14px */
+    --font-size-nav: 1.25rem; /* 20px */
+    --font-size-button: 1rem; /* 16px */
     --form-input-border-size: 1px;
 
     /* breakpoints */
@@ -46,7 +48,50 @@
     /* radius */
     --default-border-radius: 1rem;
     --button-border-radius: 2rem;
-    --form-input-border-radius: 5px;
+    --form-input-border-radius: 0.3rem;
+
+    /* spacing */
+    --padding-xs: 0.3rem; /* 5px */
+    --padding-sm: 0.9375rem; /* 15px */
+    --padding-md: 1.875rem; /* 30px */
+    --padding-lg: 3.125rem; /* 50px */
+    --padding-xl: 4.375rem; /* 70px */
+
+    --margin-xs: 0.3rem; /* 5px */
+    --margin-sm: 0.9375rem; /* 15px */
+    --margin-md: 1.875rem; /* 30px */
+    --margin-lg: 3.125rem; /* 50px */
+    --margin-xl: 4.375rem; /* 70px */
+}
+
+/* base */
+
+body {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 576px){
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 992px){
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        font-size: 20px;
+    }
 }
 
 /* Font import */
@@ -86,8 +131,8 @@ img.shadow {
     background-color: var(--button-background-color);
     box-shadow: 20px 20px 60px var(--shadow-hue);
     font-family: RubrikEdgeNewBold;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: var(--padding-sm);
+    padding-bottom: var(--padding-sm);
     border: none;
 }
 
@@ -103,7 +148,7 @@ h1 {
     color: var(--primary-color);
     font-family: RubrikEdgeNewRegular;
     font-size: var(--font-size-header1);
-    line-height: 58px;
+    line-height: 56px;
     text-transform: uppercase;
 }
 
@@ -119,7 +164,7 @@ h2 {
     color: var(--secondary-color);
     font-family: RubrikEdgeNewLight;
     font-size: var(--font-size-header2);
-    line-height: 58px;
+    line-height: 48px;
     text-transform: uppercase;
 }
 
@@ -144,11 +189,32 @@ h5 {
     line-height: 24px;
 }
 
+h6 {
+    color: var(--text-dark-color);
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-header6);
+    line-height: 24px;
+}
+
 p {
     color: var(--text-dark-color);
     font-family: RubrikEdgeNewRegular;
     font-size: var(--font-size-text);
     line-height: 24px;
+}
+
+ul li {
+    color: var(--text-dark-color);
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text);
+    line-height: 24px;
+}
+
+small {
+    color: var(--text-grey-color);
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text-small);
+    line-height: 22px;
 }
 
 address {
@@ -218,7 +284,15 @@ a.btn-outline-primary:hover::before {
 
 section.s_features img {
     box-shadow: 20px 20px 60px var(--shadow-hue);
-    margin-bottom: 30px;
+    margin-bottom: var(--padding-md);
+    height: 200px;
+}
+
+@media (min-width: 768px) {
+    section.s_features img {
+        margin-bottom: var(--padding-lg);
+        height: 250px;
+    }
 }
 
 section.s_features a {
@@ -235,7 +309,7 @@ section.s_cover p {
 
 section.s_cover h1 {
     color: var(--text-inverted-color);
-    line-height: 57px;
+    line-height: 56px;
     text-transform: none;
 }
 
@@ -267,63 +341,68 @@ section.s_text_form h1 {
 
 section.s_text_form form.s_website_form {
     background: #fff;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
+    padding-top: var(--padding-lg);
     border-radius: var(--default-border-radius);
     box-shadow: 20px 20px 60px var(--shadow-hue);
 }
 
-section.s_text_form label.col-form-label {
+/* override form */
+
+form.s_website_form {
+    padding-bottom: var(--padding-md);
+}
+
+form.s_website_form label.col-form-label {
     font-size: var(--font-size-text-small);
 }
 
-section.s_text_form textarea.form-control,
-section.s_text_form input.form-control {
+form.s_website_form textarea.form-control,
+form.s_website_form input.form-control {
     font-family: RubrikEdgeNewRegular;
     font-size: var(--font-size-text-small);
-    padding: 30px;
+    padding: var(--padding-md);
     border: var(--form-input-border-size) solid var(--form-input-border-color);
     border-radius: var(--form-input-border-radius);
 }
 
-section.s_text_form textarea.form-control:focus,
-section.s_text_form input.form-control:focus {
+form.s_website_form textarea.form-control:focus,
+form.s_website_form input.form-control:focus {
     border: var(--form-input-border-size) solid var(--form-input-border-color);
     box-shadow: 0px 10px 20px var(--form-input-focus-hue);
 }
 
-section.s_text_form input.form-control {
+form.s_website_form input.form-control {
     height: 75px;
 }
 
-section.s_text_form textarea.form-control {
+form.s_website_form textarea.form-control {
     height: 200px;
 }
 
-section.s_text_form button.o_website_form_send {
+form.s_website_form button.o_website_form_send {
     border-radius: var(--button-border-radius);
     text-transform: none;
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
     section.s_text_form form.s_website_form {
-        padding-right: 90px;
+        padding-right: var(--padding-xl);
     }
 }
 
 @media (min-width: 768px) {
 
-    section.s_text_form label.col-form-label {
-        margin-top: 15px;
+    form.s_website_form label.col-form-label {
+        margin-top: var(--padding-sm);
     }
 
-    section.s_text_form div.form-group {
+    form.s_website_form div.form-group {
         text-align: right;
     }
 
-    section.s_text_form div.form-group:last-child {
+    form.s_website_form div.form-group:last-child {
         text-align: left;
     }
 }
@@ -344,11 +423,15 @@ section.s_image_text h1 {
 
 @media (min-width: 992px) {
     section.s_text_image div.row > div {
-        padding-right: 60px;
+        padding-right: var(--padding-lg);
     }
 }
 
-/* Override scroll navbar */
+/* Override navbar */
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("/theme_mint_system/static/img/menu.svg");
+}
 
 .navbar-light {
     background-color: var(--primary-color) !important;
@@ -375,8 +458,12 @@ section.s_image_text h1 {
     color: var(--link-hover-color);
 }
 
-header#my_header div.navbar-collapse {
-    padding-top: 50px;
+/* header */
+
+@media (min-width: 768px) {
+    header#my_header div.navbar-collapse {
+        padding-top: var(--padding-lg);
+    }
 }
 
 header.o_header_affix {
@@ -385,6 +472,16 @@ header.o_header_affix {
 
 header.affixed nav {
     box-shadow: 0px 10px 20px #0000001A;
+}
+
+header .navbar-brand.logo img {
+    max-height: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    header .navbar-brand.logo img {
+        max-height: 4.375rem;
+    }
 }
 
 /* Override mobile nav */
@@ -405,6 +502,14 @@ footer p {
     line-height: 22px;
 }
 
+ul li {
+    color: var(--text-dark-color);
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text);
+    font-size: var(--font-size-text-small);
+    line-height: 22px;
+}
+
 @media (min-width: 992px) {
     div#footer section.s_text_block .container {
         max-width: var(--breakpoint-lg);
@@ -412,9 +517,15 @@ footer p {
 }
 
 footer img.logo {
-    height: 70px;
-    margin-top: 70px;
-    margin-bottom: 70px;
+    max-height: 3.5rem;
+    margin-top: var(--margin-xl);
+    margin-bottom: var(--margin-xl);
+}
+
+@media (min-width: 768px) {
+    footer img.logo {
+        max-height: 4.375rem;
+    }
 }
 
 /* Add section style */

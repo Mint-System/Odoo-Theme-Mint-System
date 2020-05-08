@@ -1,31 +1,45 @@
 # TODO
 
+## Review
+
+- [ ] Discuss rem font sizes and dynamic resizing with Blatthirsch
+
 ## Design
 
 - [ ] Menu toolbar should show up earlier
-- [ ] change burger menu color
+- [ ] style the blog https://www.mint-system.ch/blog
+- [ ] Move footer logo inwards
 
 ## Content
 
-- [ ] Update contact page: form field, submit text and Google Maps
 - [ ] Add icons to odoo page
-- [ ] Update contact form mail address
-- [ ] Init blog
 - [ ] Create offer subsites
 
 ## Functional
 
-- [ ] JavaScript to set onepage anchor as active menu
 - [ ] Scroll link with arrows
 - [ ] Disable google maps link
+- [ ] Override menubar styles f.g. h1 is 62px by default
 
 ## Bugs
 
-- [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css
+- [ ] Delete logo on edit footer required
+- [ ] Background urls are not relative
+- [ ] Button outlined hover margin is wack
+- [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
 - [ ] Inserting text_form triggers params form 4x times
 
 # DONE
 
+- [-] JavaScript to set onepage anchor as active menu
+- [x] Resize feature icons
+- [x] change burger menu color
+- [x] Dynamic resize font
+- [x] Make design more mobile friendly -> convert from px to rem;
+- [x] Update contact page: form field, submit text and Google Maps
+- [x] Init blog
+- [x] Update contact form mail address
+- [x] Fix list items default size
 - [x] Set logo and favicon
 - [x] setup logo
 - [x] Increase bottom and top margin for text_form heading
