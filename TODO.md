@@ -9,6 +9,9 @@
 - [ ] Menu toolbar should show up earlier
 - [ ] style the blog https://www.mint-system.ch/blog
 - [ ] Move footer logo inwards
+- [ ] margin bottom navbar
+- [ ] Readmore links on same level
+- [ ] fix outlined button opacity on dark background
 
 ## Content
 
@@ -23,14 +26,20 @@
 
 ## Bugs
 
+- [ ] Line height removes bottom border https://www.mint-system.ch/odoo
 - [ ] Delete logo on edit footer required
 - [ ] Background urls are not relative
 - [ ] Button outlined hover margin is wack
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
 - [ ] Inserting text_form triggers params form 4x times
 
+# BACKLOG
+
+- [ ] Buy the font
+
 # DONE
 
+- [x] lead inserted in text_block -> can be deleted
 - [-] JavaScript to set onepage anchor as active menu
 - [x] Resize feature icons
 - [x] change burger menu color
