@@ -11,5 +11,5 @@
         'views/snippet_options.xml'
     ],
     'category': 'Theme',
-    'depends': ['theme_common'],
+    'depends': ['theme_common', 'website_blog'],
 }
