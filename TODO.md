@@ -2,16 +2,26 @@
 
 ## Review
 
-- [ ] Discuss rem font sizes and dynamic resizing with Blatthirsch
+- [x] Discuss rem font sizes and dynamic resizing with Blatthirsch
+- [ ] Optimize website: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.mint-system.ch%2F&hl=en_GB
+    - lazy loading images -> https://apps.odoo.com/apps/modules/12.0/website_lazy_load_image/
+    - enable gzip and compression -> find best practice
+    - remove css -> maybee common.css
+    - add alternative font
 
 ## Design
 
-- [ ] Menu toolbar should show up earlier
+- [ ] Adjust breakpoints for offer
+    Icons smaller, text mobile and ipad smaller
+- [ ] Remove icons from footer
+- [ ] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
 - [ ] style the blog https://www.mint-system.ch/blog
 - [ ] Move footer logo inwards
 - [ ] margin bottom navbar
 - [ ] Readmore links on same level
 - [ ] fix outlined button opacity on dark background
+- [ ] add 80% transparency to menu bar
+- [ ] Add animations to readmore links
 
 ## Content
 
@@ -26,6 +36,8 @@
 
 ## Bugs
 
+- [ ] Copyright is too big
+- [ ] Galaxy S8/9 cuts off cover title. Make font width dynamic
 - [ ] Line height removes bottom border https://www.mint-system.ch/odoo
 - [ ] Delete logo on edit footer required
 - [ ] Background urls are not relative
@@ -35,10 +47,15 @@
 
 # BACKLOG
 
+- [ ] Logo im Footer entfernen?
+- [ ] Footer elements must be on the same line
+- [ ] Rotate people list -> we do not have a hierarchy
 - [ ] Buy the font
+- [ ] Remove google map link
 
 # DONE
 
+- [x] Menu toolbar should show up earlier #prio1 -> disable fixed header and build myself?
 - [x] lead inserted in text_block -> can be deleted
 - [-] JavaScript to set onepage anchor as active menu
 - [x] Resize feature icons
