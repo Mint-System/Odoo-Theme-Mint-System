@@ -12,6 +12,7 @@
     --text-inverted-color: #ffffff;
     --shadow-hue: #00000066;
     --button-background-color: #13D5C4;
+    --button-background-transparent-color: #13D5C433;
     --button-background-hover-color: #0D8485;
     --link-active-color: #13D5C4;
     --link-hover-color: #13D5C4;
@@ -66,49 +67,52 @@
 
 /* base */
 
-body {
+html {
     font-size: 14px;
 }
 
 @media screen and (min-width: 576px){
-    body {
-        font-size: 16px;
+    html {
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width: 768px){
-    body {
-        font-size: 16px;
+    html {
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width: 992px){
-    body {
-        font-size: 18px;
+    html {
+        font-size: 15px;
     }
 }
 
 @media screen and (min-width: 1200px){
-    body {
-        font-size: 20px;
+    html {
+        font-size: 17px;
     }
 }
 
 /* Font import */
 
 @font-face {
-    font-family: "RubrikEdgeNewRegular";
+    font-family: RubrikEdgeNewRegular;
     src:url(/theme_mint_system/static/otf/RubrikEdgeNewRegular.otf) format("opentype");
+    font-display: swap;
 }
 @font-face {
-    font-family: "RubrikEdgeNewBold";
+    font-family: RubrikEdgeNewBold;
     font-weight: bold;
     src:url(/theme_mint_system/static/otf/RubrikEdgeNewBold.otf) format("opentype");
+    font-display: swap;
 }
 @font-face {
-    font-family: "RubrikEdgeNewLight";
+    font-family: RubrikEdgeNewLight;
     font-weight: lighter;
     src:url(/theme_mint_system/static/otf/RubrikEdgeNewLight.otf) format("opentype");
+    font-display: swap;
 }
 
 /* Override typography */
@@ -200,7 +204,7 @@ p {
     color: var(--text-dark-color);
     font-family: RubrikEdgeNewRegular;
     font-size: var(--font-size-text);
-    line-height: 24px;
+    line-height: 28px;
 }
 
 ul li {
@@ -222,7 +226,7 @@ address {
     font-size: var(--font-size-text-small);
 }
 
-/* links */
+/* Links */
 
 p > a {
     border-bottom: var(--link-border-color) solid var(--link-border-size);
@@ -247,11 +251,14 @@ main p > a:hover {
     border-bottom: var(--link-border-hover-color) solid var(--link-border-size);
 }
 
+/* Button */
 a.btn-outline-primary {
     font-size: var(--font-size-text);
     color: var(--text-dark-color);
     border: none;
     transition: none;
+    padding: 0px;
+    padding-bottom: 8px;
 }
 
 a.btn-outline-primary:hover {
@@ -259,9 +266,9 @@ a.btn-outline-primary:hover {
     background-color: var(--button-background-color);
     border: none;
     border-radius: var(--button-border-radius);
-    transition: none;
-    margin-top: 5px;
-    margin-left: 20px;
+    padding-right: 20px;
+    margin-right: -20px;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
 a.btn-outline-primary::before {
@@ -270,14 +277,13 @@ a.btn-outline-primary::before {
     border-radius: var(--button-border-radius);
     height: 40px;
     width: 40px;
-    background-color: var(--button-background-color);
-    opacity: 0.22;
+    background-color: var(--button-background-transparent-color);
     margin-bottom: -15px;
     margin-right: -20px;
 }
 
 a.btn-outline-primary:hover::before {
-    display: none;
+    transition: all 0.15s ease-out;
 }
 
 /* Override feature */
@@ -285,10 +291,17 @@ a.btn-outline-primary:hover::before {
 section.s_features img {
     box-shadow: 20px 20px 60px var(--shadow-hue);
     margin-bottom: var(--padding-md);
-    height: 200px;
+    height: 150px;
 }
 
 @media (min-width: 768px) {
+    section.s_features img {
+        margin-bottom: var(--padding-lg);
+        height: 200px;
+    }
+}
+
+@media (min-width: 992px) {
     section.s_features img {
         margin-bottom: var(--padding-lg);
         height: 250px;
@@ -497,6 +510,7 @@ header .navbar-brand.logo img {
     color: var(--primary-color);
 }
 
+footer span,
 footer p {
     font-size: var(--font-size-text-small);
     line-height: 22px;
@@ -533,6 +547,7 @@ footer img.logo {
 section.style-inverted h1,
 section.style-inverted h2,
 section.style-inverted h3,
+section.style-inverted .btn,
 section.style-inverted p {
     color: var(--text-inverted-color);
 }
