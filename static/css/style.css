@@ -252,6 +252,7 @@ main p > a:hover {
 }
 
 /* Button */
+
 a.btn-outline-primary {
     font-size: var(--font-size-text);
     color: var(--text-dark-color);
@@ -286,6 +287,50 @@ a.btn-outline-primary:hover::before {
     transition: all 0.15s ease-out;
 }
 
+/* Override blog */
+
+.website_blog .o_wblog_post_title {
+    /* color: var(--text-inverted-color); */
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-header1);
+    line-height: 56px;
+}
+
+.website_blog .o_wblog_post_subtitle {
+    /* color: var(--text-inverted-color); */
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text);
+    line-height: 28px;
+}
+
+article.o_wblog_post .o_blog_post_title {
+    /* color: var(--text-dark-color); */
+    font-family: RubrikEdgeNewBold;
+    font-size: var(--font-size-header5);
+    line-height: 24px;
+}
+
+.website_blog nav.breadcrumb .active span {
+    font-size: var(--font-size-text);
+    font-family: RubrikEdgeNewRegular;
+    line-height: 24px;
+}
+
+.website_blog #o_wblog_posts_loop .o_wblog_normalize_font {
+    color: var(--text-dark-color);
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text-small);
+    line-height: 22px;
+}
+
+article.o_wblog_post time {
+    color: var(--text-grey-color);
+    font-family: RubrikEdgeNewRegular;
+    font-size: var(--font-size-text-small);
+    line-height: 22px;
+}
+
+
 /* Override feature */
 
 section.s_features img {
@@ -310,6 +355,14 @@ section.s_features img {
 
 section.s_features a {
     border-bottom: none;
+}
+
+/* Override features grid */
+
+@media (min-width: 992px) {
+    section.s_features_grid div[data-name="Box"] {
+        min-height: 150px;
+    }
 }
 
 /* Override cover */
@@ -519,7 +572,6 @@ footer p {
 ul li {
     color: var(--text-dark-color);
     font-family: RubrikEdgeNewRegular;
-    font-size: var(--font-size-text);
     font-size: var(--font-size-text-small);
     line-height: 22px;
 }

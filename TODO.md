@@ -12,15 +12,13 @@
 
 
 - [ ] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
-- [ ] style the blog https://www.mint-system.ch/blog
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
 - [ ] add 80% transparency to menu bar
 
 ## Content
 
-- [ ] Add icons to odoo page -> copy from odoo brand assets https://www.odoo.com/de_DE/page/brand-assets
-- [ ] Create offer subsites
+- [ ] Create offer subsites for management and software-engineering
 
 ## Functional
 
@@ -45,6 +43,9 @@
 
 # DONE
 
+- [x] style the blog https://www.mint-system.ch/blog
+- [x] Add icons to odoo page -> copy from odoo brand assets https://www.odoo.com/de_DE/page/brand-assets
+- [x] Feature grid boxes min-height
 - [x] Remove theme common
 - [x] Button outlined hover margin is wack
 - [x] Copyright is too big
