@@ -5,8 +5,8 @@
 - [ ] Optimize website: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.mint-system.ch%2F&hl=en_GB
     - [ ] lazy loading images -> https://apps.odoo.com/apps/modules/12.0/website_lazy_load_image/
     - [x] enable gzip and compression -> find best practice
-    - [ ] remove css -> maybee common.css
-    - [ ] add alternative font
+    - [x] remove css -> maybee common.css -> removed theme_Common
+    - [ ] add alternative font -> fix fontawesome include
 
 ## Design
 
@@ -45,6 +45,7 @@
 
 # DONE
 
+- [x] Remove theme common
 - [x] Button outlined hover margin is wack
 - [x] Copyright is too big
 - [x] Galaxy S8/9 cuts off cover title. Make font width dynamic
