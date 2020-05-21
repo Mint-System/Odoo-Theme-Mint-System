@@ -28,6 +28,7 @@
 
 ## Bugs
 
+- [ ] Remove active frame for button
 - [ ] Delete logo on edit footer required
 - [ ] Background urls are not relative
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
