@@ -10,7 +10,7 @@
 
 ## Design
 
-
+- [ ] Underline blog breadcrumb links
 - [ ] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
@@ -28,6 +28,7 @@
 
 ## Bugs
 
+- [ ] Fix lineheight for ul > li > p -> override
 - [ ] Remove active frame for button
 - [ ] Delete logo on edit footer required
 - [ ] Background urls are not relative
