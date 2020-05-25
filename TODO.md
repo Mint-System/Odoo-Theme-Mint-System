@@ -10,7 +10,6 @@
 
 ## Design
 
-- [ ] Underline blog breadcrumb links
 - [ ] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
@@ -23,15 +22,12 @@
 ## Functional
 
 - [ ] Scroll link with arrows
-- [ ] Disable google maps link
 - [ ] Override menubar styles f.g. h1 is 62px by default
 
 ## Bugs
 
-- [ ] Fix lineheight for ul > li > p -> override
 - [ ] Remove active frame for button
 - [ ] Delete logo on edit footer required
-- [ ] Background urls are not relative
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
 - [ ] Inserting text_form triggers params form 4x times
 
@@ -45,6 +41,10 @@
 
 # DONE
 
+- [x] Style blog
+- [x] Fix lineheight for ul > li > p -> override
+- [-] Background urls are not relative
+- [x] Underline blog breadcrumb links
 - [x] style the blog https://www.mint-system.ch/blog
 - [x] Add icons to odoo page -> copy from odoo brand assets https://www.odoo.com/de_DE/page/brand-assets
 - [x] Feature grid boxes min-height
