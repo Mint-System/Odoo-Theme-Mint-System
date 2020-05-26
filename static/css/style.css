@@ -631,7 +631,7 @@ html.scrolled header {
 
     .scrolled header#my_header div.navbar-collapse {
         padding-top: 0rem;
-        transition: padding-top 1s ease-in-out;
+        transition: padding-top 0.7s ease-in-out;
     }
 }
 
@@ -669,7 +669,7 @@ html.scrolled header {
 .scrolled #wrapwrap header .logo,
 .scrolled #wrapwrap header img.default {
     height: 3.5rem;
-    transition: height 1s ease-in-out;
+    transition: height 0.7s ease-in-out;
 }
 
 @media (max-width: 768px) {
