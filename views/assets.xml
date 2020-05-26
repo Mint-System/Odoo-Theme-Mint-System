@@ -4,7 +4,7 @@
     <template id="customstyle" name="Custom style" inherit_id="website.assets_frontend">
         <xpath expr="link[last()]" position="after">
             <link rel="stylesheet" type="text/css" href="/theme_mint_system/static/css/style.css"/>
-            <!-- <link rel="stylesheet" type="text/scss" href="/theme_common/static/src/scss/s_two_columns.scss"/> -->
+            <script type="text/javascript" src="/theme_mint_system/static/js/main.js"/>
         </xpath>
     </template>
 

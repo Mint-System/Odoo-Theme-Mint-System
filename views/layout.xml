@@ -9,6 +9,14 @@
             <attribute name="id">my_header</attribute>
         </xpath>
 
+        <xpath expr="//div[@id='wrapwrap']/header/nav/div/a" position="replace">
+            <a class="navbar-brand logo" href="/">
+                <img src="/theme_mint_system/static/img/logo.svg" class="img img-fluid default" alt="Mint System" />
+                <img src="/theme_mint_system/static/img/logo-inverted.svg" class="img img-fluid inverted" alt="Mint System" />
+                <img src="/theme_mint_system/static/img/logo-overlay.svg" class="img img-fluid overlay" alt="Mint System" />
+            </a>
+        </xpath>
+
     </template>
 
     <!-- Customize footer  -->

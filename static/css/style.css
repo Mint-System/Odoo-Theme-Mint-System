@@ -1,5 +1,5 @@
 
-/* variables */
+/* # VARIABLES */
 
 :root {
     /* colors */
@@ -65,7 +65,7 @@
     --margin-xl: 4.375rem; /* 70px */
 }
 
-/* base */
+/* # BASE */
 
 html {
     font-size: 14px;
@@ -95,7 +95,7 @@ html {
     }
 }
 
-/* Font import */
+/* # FONT IMPORT */
 
 @font-face {
     font-family: RubrikEdgeNewRegular;
@@ -115,7 +115,7 @@ html {
     font-display: swap;
 }
 
-/* Override typography */
+/* # BOOTSTRAP CLASSES */
 
 .rounded {
     border-radius: var(--default-border-radius) !important;
@@ -125,39 +125,18 @@ img.shadow {
     box-shadow: 20px 20px 60px var(--shadow-hue) !important;
 }
 
-/* Override button */
-
-.btn-primary,
-.btn.rounded-circle {
-    font-size: var(--font-size-button);
-    line-height: 19px;
-    text-transform: uppercase;
-    background-color: var(--button-background-color);
-    box-shadow: 20px 20px 60px var(--shadow-hue);
-    font-family: RubrikEdgeNewBold;
-    padding-top: var(--padding-sm);
-    padding-bottom: var(--padding-sm);
-    border: none;
-}
-
-.btn-primary:hover,
-.btn.rounded-circle:hover {
-    border-bottom: none;
-    background-color: var(--button-background-hover-color);
-}
-
-/* Override global */
+/* # TYPOGRAPHY */
 
 h1 {
     color: var(--primary-color);
-    font-family: RubrikEdgeNewRegular;
+    font-family: RubrikEdgeNewRegular, sans-serif;
     font-size: var(--font-size-header1);
     line-height: 1.2;
     text-transform: uppercase;
 }
 
 h1 b {
-    font-family: RubrikEdgeNewBold;
+    font-family: RubrikEdgeNewBold, sans-serif;
 }
 
 h1.s_title_thin {
@@ -231,7 +210,7 @@ address {
     font-size: var(--font-size-text-small);
 }
 
-/* Links */
+/* # LINKS */
 
 header a,
 main a {
@@ -258,7 +237,26 @@ p > a:hover {
     border-bottom: var(--link-border-hover-color) solid var(--link-border-size);
 }
 
-/* Button */
+/* # BUTTON */
+
+.btn-primary,
+.btn.rounded-circle {
+    font-size: var(--font-size-button);
+    line-height: 19px;
+    text-transform: uppercase;
+    background-color: var(--button-background-color);
+    box-shadow: 20px 20px 60px var(--shadow-hue);
+    font-family: RubrikEdgeNewBold;
+    padding-top: var(--padding-sm);
+    padding-bottom: var(--padding-sm);
+    border: none;
+}
+
+.btn-primary:hover,
+.btn.rounded-circle:hover {
+    border-bottom: none;
+    background-color: var(--button-background-hover-color);
+}
 
 a.btn-outline-primary {
     font-size: var(--font-size-text);
@@ -279,6 +277,12 @@ a.btn-outline-primary:hover {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 }
 
+a.btn-outline-primary:active {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+
 a.btn-outline-primary::before {
     content: '';
     display: inline-block;
@@ -294,7 +298,7 @@ a.btn-outline-primary:hover::before {
     transition: all 0.15s ease-out;
 }
 
-/* Override blog */
+/* # BLOG */
 
 .website_blog .o_wblog_post_title #o_wblog_post_name {
     color: var(--primary-color);
@@ -316,6 +320,10 @@ a.btn-outline-primary:hover::before {
     font-size: var(--font-size-text-small);
     line-height: 1.2;
     padding-bottom: var(--padding-xs);
+}
+
+.website_blog nav.breadcrumb {
+    white-space: nowrap;
 }
 
 .website_blog nav.breadcrumb a,
@@ -371,7 +379,7 @@ div#o_wblog_blog_top .bg-secondary {
     opacity: 1 !important;
 }
 
-/* Override feature */
+/* FEATURE */
 
 section.s_features img {
     box-shadow: 20px 20px 60px var(--shadow-hue);
@@ -397,7 +405,7 @@ section.s_features a {
     border-bottom: none;
 }
 
-/* Override features grid */
+/* # FEATURES GRID */
 
 @media (min-width: 992px) {
     section.s_features_grid div[data-name="Box"] {
@@ -405,7 +413,7 @@ section.s_features a {
     }
 }
 
-/* Override cover */
+/* # COVER */
 
 section.s_cover p {
     color: var(--text-light-color);
@@ -419,7 +427,7 @@ section.s_cover h1 {
     text-transform: none;
 }
 
-/* Override text form */
+/* # TEXT FORM */
 
 section.s_text_form h1,
 section.s_text_form h2,
@@ -454,7 +462,7 @@ section.s_text_form form.s_website_form {
     box-shadow: 20px 20px 60px var(--shadow-hue);
 }
 
-/* override form */
+/* # FORM */
 
 form.s_website_form {
     padding-bottom: var(--padding-md);
@@ -519,7 +527,7 @@ form.s_website_form button.o_website_form_send {
     }
 }
 
-/* Override text image */
+/* # TEXT IMAGE */
 
 section.s_text_image h1, 
 section.s_image_text h1 {
@@ -533,20 +541,35 @@ section.s_image_text h1 {
     }
 }
 
-/* Override navbar */
+/* # NAVBAR */
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("/theme_mint_system/static/img/menu.svg");
 }
 
+.scrolled .navbar-light .navbar-toggler-icon {
+    background-image: url("/theme_mint_system/static/img/menu-inverted.svg");
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+
 .navbar-light {
     background-color: var(--primary-color) !important;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link span {
     color: var(--text-light-color);
     font-size: var(--font-size-nav);
     line-height: 1.2;
+}
+
+.scrolled .navbar-light .navbar-nav .nav-link span {
+    color: var(--primary-color);
+    transition: color 0.5s ease-in-out;
 }
 
 .navbar-light .navbar-nav .nav-link.active span {
@@ -564,40 +587,100 @@ section.s_image_text h1 {
     color: var(--link-hover-color);
 }
 
-/* header */
+/* # HEADER */
 
-@media (min-width: 768px) {
-    header#my_header div.navbar-collapse {
-        padding-top: var(--padding-lg);
-    }
+#wrapwrap.o_header_overlay > header:not(.o_header_affix),
+header#my_header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
-header.o_header_affix {
+#oe_main_menu_navbar + #wrapwrap.o_header_overlay header {
+    top: 46px;
+}
+
+#wrapwrap:not(.o_header_overlay) main {
+    padding-top: 63px;
+}
+
+/* header.o_header_affix {
     background: none;
+} */
+
+html.scrolled header nav {
+    box-shadow: 0px 10px 20px var(--shadow-hue);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
-header.affixed nav {
-    box-shadow: 0px 10px 20px #0000001A;
-}
-
-header .navbar-brand.logo img {
-    max-height: 3.5rem;
+html.scrolled .navbar-light,
+html.scrolled header {
+    background-color: hsla(0,0%,100%,.8) !important;
+    transition: background-color 0.5s ease-in-out;
 }
 
 @media (min-width: 768px) {
-    header .navbar-brand.logo img {
-        max-height: 4.375rem;
+    #wrapwrap:not(.o_header_overlay) main {
+        padding-top: 100px;
+    }
+
+    header#my_header div.navbar-collapse {
+        padding-top: var(--padding-md);
+    }
+
+    .scrolled header#my_header div.navbar-collapse {
+        padding-top: 0rem;
+        transition: padding-top 1s ease-in-out;
     }
 }
 
-/* Override mobile nav */
+/* # LOGO */
 
-.navbar-light .navbar-toggler {
-    border: none;
-    font-size: 1.5rem;
+#wrapwrap header img {
+    position: absolute;
 }
 
-/* Override footer */
+/* Switch between logo variants */
+
+#wrapwrap.o_header_overlay header img.default,
+#wrapwrap.o_header_overlay header img.inverted {
+    opacity: 0;
+}
+
+#wrapwrap:not(.o_header_overlay) header img.default,
+#wrapwrap:not(.o_header_overlay) header img.overlay {
+    opacity: 0;
+}
+
+.scrolled #wrapwrap header img.inverted,
+.scrolled #wrapwrap header img.overlay {
+    opacity: 0;
+}
+.scrolled #wrapwrap header img.default {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#wrapwrap header .logo {
+    height: 4.375rem;
+}
+
+.scrolled #wrapwrap header .logo,
+.scrolled #wrapwrap header img.default {
+    height: 3.5rem;
+    transition: height 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+
+    #wrapwrap header img,
+    #wrapwrap header .logo {
+        height: 3.5rem;
+    }
+}
+
+/* # FOOTER */
 
 #footer h5 {
     color: var(--primary-color);
@@ -633,7 +716,7 @@ footer img.logo {
     }
 }
 
-/* Add section style */
+/* # SECTION INVERTED */
 
 section.style-inverted h1,
 section.style-inverted h2,

@@ -10,10 +10,9 @@
 
 ## Design
 
-- [ ] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
-- [ ] add 80% transparency to menu bar
+
 
 ## Content
 
@@ -33,6 +32,7 @@
 
 # BACKLOG
 
+- [ ] Remove .lead
 - [ ] Logo im Footer entfernen?
 - [ ] Footer elements must be on the same line
 - [ ] Rotate people list -> we do not have a hierarchy
@@ -41,6 +41,8 @@
 
 # DONE
 
+- [x] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
+- [x] add 80% transparency to menu bar
 - [x] Style blog
 - [x] Fix lineheight for ul > li > p -> override
 - [-] Background urls are not relative
