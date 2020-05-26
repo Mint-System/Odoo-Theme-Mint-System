@@ -41,6 +41,7 @@
 
 # DONE
 
+- [x] Fix padding top on blog
 - [x] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
 - [x] add 80% transparency to menu bar
 - [x] Style blog

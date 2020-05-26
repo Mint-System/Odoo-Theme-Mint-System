@@ -602,12 +602,8 @@ header#my_header {
 }
 
 #wrapwrap:not(.o_header_overlay) main {
-    padding-top: 63px;
+    padding-top: var(--padding-lg);
 }
-
-/* header.o_header_affix {
-    background: none;
-} */
 
 html.scrolled header nav {
     box-shadow: 0px 10px 20px var(--shadow-hue);
@@ -622,7 +618,7 @@ html.scrolled header {
 
 @media (min-width: 768px) {
     #wrapwrap:not(.o_header_overlay) main {
-        padding-top: 100px;
+        padding-top: var(--padding-xl);
     }
 
     header#my_header div.navbar-collapse {
