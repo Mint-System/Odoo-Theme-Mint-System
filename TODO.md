@@ -3,19 +3,23 @@
 ## Review
 
 - [ ] Optimize website: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.mint-system.ch%2F&hl=en_GB
-    - [ ] lazy loading images -> https://apps.odoo.com/apps/modules/12.0/website_lazy_load_image/
+    - [ ] lazy loading images -> https://apps.odoo.com/apps/modules/12.0/website_lazy_load_image/ does not work; thought about adding loading="lazy" to all img tags. Not so easy -> layout_column may hold the key
     - [x] enable gzip and compression -> find best practice
     - [x] remove css -> maybee common.css -> removed theme_Common
     - [ ] add alternative font -> fix fontawesome include
 
 ## Design
 
+- [ ] Review new adobe designs from Jeanette
+- [ ] set letter spacing
+- [ ] Add new font .lead or subtitle
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
-
+- [ ] Add sans-serif alternative font
 
 ## Content
 
+- [ ] Create odoo styled screenshots
 - [ ] Create offer subsites for management and software-engineering
 
 ## Functional
