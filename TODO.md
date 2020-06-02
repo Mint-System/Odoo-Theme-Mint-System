@@ -32,7 +32,6 @@
 ## Bugs
 
 - [ ] Padding top for #wrapwrap is not enought on blog
-- [ ] Blog title word wrap
 - [ ] Editor still insers footer logo
 - [ ] Remove active frame for button
 - [ ] Delete logo on edit footer required
@@ -51,6 +50,7 @@
 
 # DONE
 
+- [x] Blog title word wrap
 - [x] Add sans-serif alternative font
 - [x] Fix padding top on blog
 - [x] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
