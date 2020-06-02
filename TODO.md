@@ -37,7 +37,6 @@
 # BACKLOG
 
 - [ ] Optimize Css by removing unnecessary includes
-- [ ] Remove .lead
 - [ ] Logo im Footer entfernen?
 - [ ] Footer elements must be on the same line
 - [ ] Rotate people list -> we do not have a hierarchy
@@ -46,6 +45,8 @@
 
 # DONE
 
+- [x] Decrease icon size
+- [-] Remove .lead
 - [x] Override menubar styles f.g. h1 is 62px by default -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 - [x] Add new font .lead or subtitle -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 - [x] set letter spacing

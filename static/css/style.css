@@ -404,14 +404,14 @@ section.s_features img {
 @media (min-width: 768px) {
     section.s_features img {
         margin-bottom: var(--padding-lg);
-        height: 200px;
+        height: 180px;
     }
 }
 
 @media (min-width: 992px) {
     section.s_features img {
         margin-bottom: var(--padding-lg);
-        height: 250px;
+        height: 210px;
     }
 }
 
