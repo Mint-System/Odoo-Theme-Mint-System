@@ -10,12 +10,14 @@
 
 ## Design
 
+- [ ] Insert icons
+- [ ] Add curtain on scroll styled menu https://gmcontractors.co.uk/
 - [ ] Review new adobe designs from Jeanette
+- [ ] Remove shadow form menu
 - [ ] set letter spacing
-- [ ] Add new font .lead or subtitle
+- [ ] Add new font .lead or subtitle -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
-- [ ] Add sans-serif alternative font
 
 ## Content
 
@@ -25,10 +27,13 @@
 ## Functional
 
 - [ ] Scroll link with arrows
-- [ ] Override menubar styles f.g. h1 is 62px by default
+- [ ] Override menubar styles f.g. h1 is 62px by default -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 
 ## Bugs
 
+- [ ] Padding top for #wrapwrap is not enought on blog
+- [ ] Blog title word wrap
+- [ ] Editor still insers footer logo
 - [ ] Remove active frame for button
 - [ ] Delete logo on edit footer required
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
@@ -36,6 +41,7 @@
 
 # BACKLOG
 
+- [ ] Optimize Css by removing unnecessary includes
 - [ ] Remove .lead
 - [ ] Logo im Footer entfernen?
 - [ ] Footer elements must be on the same line
@@ -45,6 +51,7 @@
 
 # DONE
 
+- [x] Add sans-serif alternative font
 - [x] Fix padding top on blog
 - [x] Create custom menu toolbar with transaprent background. Logo switch from monochrome to normal
 - [x] add 80% transparency to menu bar
