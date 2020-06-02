@@ -10,7 +10,6 @@
 
 ## Design
 
-- [ ] Insert icons
 - [ ] Add curtain on scroll styled menu https://gmcontractors.co.uk/
 - [ ] Review new adobe designs from Jeanette
 - [ ] Remove shadow form menu
@@ -21,7 +20,8 @@
 
 ## Content
 
-- [ ] Create odoo styled screenshots
+- [ ] add new background wallpaper
+- [ ] insert icon
 - [ ] Create offer subsites for management and software-engineering
 
 ## Functional
@@ -48,6 +48,8 @@
 
 # DONE
 
+- [x] remove feature image shadow
+- [x] Create odoo styled screenshots
 - [-] Padding top for #wrapwrap is not enought on blog
 - [x] Remove active frame for button
 - [x] Blog title word wrap

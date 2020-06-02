@@ -388,7 +388,6 @@ div#o_wblog_blog_top .bg-secondary {
 /* FEATURE */
 
 section.s_features img {
-    box-shadow: 20px 20px 60px var(--shadow-hue);
     margin-bottom: var(--padding-md);
     height: 150px;
 }
