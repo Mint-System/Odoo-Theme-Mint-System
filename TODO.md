@@ -31,9 +31,7 @@
 
 ## Bugs
 
-- [ ] Padding top for #wrapwrap is not enought on blog
 - [ ] Editor still insers footer logo
-- [ ] Remove active frame for button
 - [ ] Delete logo on edit footer required
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
 - [ ] Inserting text_form triggers params form 4x times
@@ -50,6 +48,8 @@
 
 # DONE
 
+- [-] Padding top for #wrapwrap is not enought on blog
+- [x] Remove active frame for button
 - [x] Blog title word wrap
 - [x] Add sans-serif alternative font
 - [x] Fix padding top on blog

@@ -284,9 +284,9 @@ a.btn-outline-primary:hover {
 }
 
 a.btn-outline-primary:active {
-    color: inherit;
-    background-color: inherit;
-    border-color: inherit;
+    color: inherit !important;
+    background-color: inherit !important;
+    border-color: inherit !important;
 }
 
 a.btn-outline-primary::before {
