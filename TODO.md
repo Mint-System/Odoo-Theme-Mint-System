@@ -10,9 +10,9 @@
 
 ## Design
 
+- [ ] Add bubble for cover
 - [ ] Add curtain on scroll styled menu https://gmcontractors.co.uk/
 - [ ] Review new adobe designs from Jeanette
-- [ ] Remove shadow form menu
 - [ ] set letter spacing
 - [ ] Add new font .lead or subtitle -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 - [ ] Move footer logo inwards
@@ -20,6 +20,7 @@
 
 ## Content
 
+- [ ] Update cover content and remove extra styles
 - [ ] add new background wallpaper
 - [ ] insert icon
 - [ ] Create offer subsites for management and software-engineering
@@ -48,6 +49,7 @@
 
 # DONE
 
+- [x] Remove shadow form menu
 - [x] remove feature image shadow
 - [x] Create odoo styled screenshots
 - [-] Padding top for #wrapwrap is not enought on blog
