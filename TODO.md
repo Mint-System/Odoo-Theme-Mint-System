@@ -15,6 +15,7 @@
 - [ ] Add curtain on scroll styled menu https://gmcontractors.co.uk/
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
+- [ ] Transition for fadeback
 
 ## Content
 
@@ -33,6 +34,7 @@
 - [ ] Delete logo on edit footer required
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
 - [ ] Inserting text_form triggers params form 4x times
+- [ ] Menu list moves behind logo as it is positioned absolut -> max-width on narrow screens
 
 # BACKLOG
 
