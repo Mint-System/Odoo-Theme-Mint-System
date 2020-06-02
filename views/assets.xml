@@ -8,4 +8,11 @@
         </xpath>
     </template>
 
+
+    <template id="summernote" name="summernote overrides" inherit_id="website.assets_editor">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/theme_mint_system/static/js/summernote_overrides.js" />
+        </xpath>
+    </template>
+
 </odoo>

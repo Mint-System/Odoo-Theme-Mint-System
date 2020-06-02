@@ -2,6 +2,7 @@
 
 ## Review
 
+- [ ] Review new adobe designs from Jeanette
 - [ ] Optimize website: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.mint-system.ch%2F&hl=en_GB
     - [ ] lazy loading images -> https://apps.odoo.com/apps/modules/12.0/website_lazy_load_image/ does not work; thought about adding loading="lazy" to all img tags. Not so easy -> layout_column may hold the key
     - [x] enable gzip and compression -> find best practice
@@ -10,11 +11,8 @@
 
 ## Design
 
-- [ ] Add bubble for cover
+- [ ] Add more space to static menu
 - [ ] Add curtain on scroll styled menu https://gmcontractors.co.uk/
-- [ ] Review new adobe designs from Jeanette
-- [ ] set letter spacing
-- [ ] Add new font .lead or subtitle -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
 
@@ -22,13 +20,12 @@
 
 - [ ] Update cover content and remove extra styles
 - [ ] add new background wallpaper
-- [ ] insert icon
+- [ ] insert icons
 - [ ] Create offer subsites for management and software-engineering
 
 ## Functional
 
 - [ ] Scroll link with arrows
-- [ ] Override menubar styles f.g. h1 is 62px by default -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
 
 ## Bugs
 
@@ -49,6 +46,10 @@
 
 # DONE
 
+- [x] Override menubar styles f.g. h1 is 62px by default -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
+- [x] Add new font .lead or subtitle -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451
+- [x] set letter spacing
+- [x] Change primary color
 - [x] Remove shadow form menu
 - [x] remove feature image shadow
 - [x] Create odoo styled screenshots

@@ -5,12 +5,23 @@
         <xpath expr="//div" position="after">
             
             <!-- Section Style -->
-            <div id="section_style_snippet_option" data-selector=".s_text_image, .s_image_text">
+            <div id="section_style_snippet_option" data-selector=".s_text_image, .s_image_text, s_call_to_action">
                 <we-collapse-area>
                     <we-toggler><i class="fa fa-fw fa-magic"/> Styles</we-toggler>
                     <we-collapse>
                         <we-button data-select-class="style-default">Default</we-button>
                         <we-button data-select-class="style-inverted">Inverted</we-button>
+                    </we-collapse>
+                </we-collapse-area>
+            </div>
+
+            <!-- Section Style -->
+            <div id="paragraph_style_snippet_option" data-selector="p">
+                <we-collapse-area>
+                    <we-toggler><i class="fa fa-fw fa-magic"/> Styles</we-toggler>
+                    <we-collapse>
+                        <we-button data-select-class="default">Default</we-button>
+                        <we-button data-select-class="lead">Lead</we-button>
                     </we-collapse>
                 </we-collapse-area>
             </div>
