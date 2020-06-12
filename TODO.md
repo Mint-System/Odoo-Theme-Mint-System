@@ -2,7 +2,6 @@
 
 ## Review
 
-- [ ] Review new adobe designs from Jeanette
 - [ ] Optimize website: https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.mint-system.ch%2F&hl=en_GB
     - [ ] lazy loading images -> https://apps.odoo.com/apps/modules/12.0/website_lazy_load_image/ does not work; thought about adding loading="lazy" to all img tags. Not so easy -> layout_column may hold the key
     - [x] enable gzip and compression -> find best practice
@@ -11,42 +10,41 @@
 
 ## Design
 
-- [ ] Add more space to static menu
+- [ ] Referenzen Stylen
 - [ ] Add curtain on scroll styled menu https://gmcontractors.co.uk/
 - [ ] Move footer logo inwards
 - [ ] Readmore links on same level
 - [ ] Transition for fadeback
 
-## Content
-
-- [ ] Update cover content and remove extra styles
-- [ ] add new background wallpaper
-- [ ] insert icons
-- [ ] Create offer subsites for management and software-engineering
-
-## Functional
-
-- [ ] Scroll link with arrows
-
 ## Bugs
 
+- [ ] Top padding is not exact -> should always have same height as nav
+- [ ] Menu list moves behind logo as it is positioned absolut -> max-width on narrow screens
 - [ ] Editor still insers footer logo
 - [ ] Delete logo on edit footer required
 - [ ] header nav bottom border rounded https://stackoverflow.com/questions/34211941/curved-end-of-border-bottom-in-css -> add svg?
 - [ ] Inserting text_form triggers params form 4x times
-- [ ] Menu list moves behind logo as it is positioned absolut -> max-width on narrow screens
 
 # BACKLOG
 
+- [ ] Test multi blog setup (restore OpenEduca)
 - [ ] Optimize Css by removing unnecessary includes
 - [ ] Logo im Footer entfernen?
-- [ ] Footer elements must be on the same line
 - [ ] Rotate people list -> we do not have a hierarchy
 - [ ] Buy the font
 - [ ] Remove google map link
 
 # DONE
 
+- [-] Intgrate cover images
+- [x] Add more space to static menu -> fix menu height to 100px;
+- [x] Update cover content and remove extra styles
+- [x] add new background wallpaper
+- [x] insert icons
+- [-] Create offer subsites for management and software-engineering
+- [-] Scroll link with arrows
+- [x] Review new adobe designs from Jeanette
+- [x] Footer elements must be on the same line
 - [x] Decrease icon size
 - [-] Remove .lead
 - [x] Override menubar styles f.g. h1 is 62px by default -> https://www.odoo.com/de_DE/forum/hilfe-1/question/10-how-to-add-custom-font-size-to-web-editor-menu-133451

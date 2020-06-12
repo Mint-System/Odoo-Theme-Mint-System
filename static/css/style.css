@@ -71,6 +71,7 @@
 
     /* navbar sizes */
     --odoo-navbar-height: 46px;
+    --navbar-height: 100px;
 }
 
 /* # BASE */
@@ -347,7 +348,8 @@ a.btn-outline-primary:hover::before {
     line-height: 2;
 }
 
-article.o_wblog_post time {
+article.o_wblog_post .o_wblog_normalize_font a,
+article.o_wblog_post .o_wblog_normalize_font time {
     color: var(--text-grey-color);
     font-size: var(--font-size-text-small);
     line-height: 1.2;
@@ -367,10 +369,6 @@ article.o_wblog_post .o_blog_post_title {
     .website_blog .o_wblog_post_page_cover.o_record_has_cover.cover_auto {
         padding: var(--padding-md);
     }
-}
-
-section#o_wblog_index_content > div  {
-    padding-top: 0rem !important;
 }
 
 div#o_wblog_next_container #o_wblog_post_name,
@@ -437,6 +435,13 @@ section.s_cover h1 {
     color: var(--text-inverted-color);
     line-height: 1.2;
     text-transform: none;
+}
+
+.parallax > .s_parallax_bg::after {
+    background-image: url("/theme_mint_system/static/img/cover-overlay.svg");
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* # TEXT FORM */
@@ -553,47 +558,47 @@ section.s_image_text h1 {
 
 /* # NAVBAR */
 
-.navbar-light .navbar-toggler-icon {
+header .navbar-light .navbar-toggler-icon {
     background-image: url("/theme_mint_system/static/img/menu.svg");
 }
 
-.scrolled .navbar-light .navbar-toggler-icon {
+.scrolled header .navbar-light .navbar-toggler-icon {
     background-image: url("/theme_mint_system/static/img/menu-inverted.svg");
 }
 
-.navbar-light .navbar-toggler {
+header .navbar-light .navbar-toggler {
     border: none;
     font-size: 1.5rem;
 }
 
-.navbar-light {
+header .navbar-light {
     background-color: var(--secondary-color) !important;
     transition: background-color 0.5s ease-in-out;
 }
 
-.navbar-light .navbar-nav .nav-link span {
+header .navbar-light .navbar-nav .nav-link span {
     color: var(--text-light-color);
     font-size: var(--font-size-nav);
     line-height: 1.2;
 }
 
-.scrolled .navbar-light .navbar-nav .nav-link span {
+.scrolled header .navbar-light .navbar-nav .nav-link span {
     color: var(--secondary-color);
     transition: color 0.5s ease-in-out;
 }
 
-.navbar-light .navbar-nav .nav-link.active span {
+header .navbar-light .navbar-nav .nav-link.active span {
     color: var(--link-active-color);
     border-bottom: var(--link-border-active-color) solid var(--nav-border-size);
     padding-bottom: 0.2rem;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+header .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1rem;
     padding-left: 1rem;
 }
 
-.navbar-light .navbar-nav .nav-link span:hover {
+header .navbar-light .navbar-nav .nav-link span:hover {
     color: var(--link-hover-color);
 }
 
@@ -612,7 +617,7 @@ header#my_header {
 }
 
 #wrapwrap:not(.o_header_overlay) main {
-    padding-top: var(--padding-lg);
+    padding-top: var(--navbar-height);
 }
 
 html.scrolled header nav {
@@ -627,11 +632,7 @@ html.scrolled header {
 
 @media (min-width: 768px) {
     #wrapwrap:not(.o_header_overlay) main {
-        padding-top: var(--padding-xl);
-    }
-
-    header#my_header div.navbar-collapse {
-        padding-top: var(--padding-md);
+        padding-top: var(--navbar-height);
     }
 
     .scrolled header#my_header div.navbar-collapse {
@@ -669,12 +670,16 @@ html.scrolled header {
 
 #wrapwrap header .logo {
     height: 4.375rem;
+    margin-top: var(--margin-xs);
+    margin-bottom: var(--margin-xs);
 }
 
 .scrolled #wrapwrap header .logo,
 .scrolled #wrapwrap header img.default {
     height: 3.5rem;
     transition: height 0.7s ease-in-out;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 @media (max-width: 767px) {
