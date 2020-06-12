@@ -36,6 +36,7 @@
 
 # DONE
 
+- [x] Fix form word wrap required
 - [-] Intgrate cover images
 - [x] Add more space to static menu -> fix menu height to 100px;
 - [x] Update cover content and remove extra styles

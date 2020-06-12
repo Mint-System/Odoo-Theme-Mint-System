@@ -439,7 +439,7 @@ section.s_cover h1 {
 
 .parallax > .s_parallax_bg::after {
     background-image: url("/theme_mint_system/static/img/cover-overlay.svg");
-    opacity: 0.5;
+    opacity: 0.3;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -486,6 +486,7 @@ form.s_website_form {
 
 form.s_website_form label.col-form-label {
     font-size: var(--font-size-text-small);
+    white-space: nowrap;
 }
 
 form.s_website_form textarea.form-control,
