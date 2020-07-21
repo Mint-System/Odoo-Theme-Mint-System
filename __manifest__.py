@@ -2,7 +2,7 @@
     'name':'Mint System Theme',
     'description': 'Odoo website theme for Mint System GmbH.',
     'sequence': 120,
-    'version': '0.7.6',
+    'version': '0.7.7',
     'author':'Mint System GmbH',
     'data': [
         'views/layout.xml',

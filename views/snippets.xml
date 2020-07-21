@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
 
-    <template id="snippet_cats" name="Example with Cats">
-        <section class="snippet_cats">
+    <template id="s_team" name="Team">
+        <section class="s_team">
             <div class="container text-center">
                 <div class="row">
                     <div class="col-lg-4">
@@ -25,9 +25,9 @@
         </section>
     </template>
 
-    <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+    <template id="place_s_team" inherit_id="website.snippets" name="Place into bar">
         <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
-            <t t-snippet="theme_mint_system.snippet_cats" t-thumbnail="/website/static/src/img/snippets_thumbs/s_features.png"/>
+            <t t-snippet="theme_mint_system.s_team" t-thumbnail="/website/static/src/img/snippets_thumbs/s_features.png"/>
         </xpath>
     </template>
 
@@ -86,7 +86,7 @@
         </section>
     </template>
 
-    <template id="place_into_bar" inherit_id="website.snippets" name="Place into bar">
+    <template id="okace_s_text_form" inherit_id="website.snippets" name="Place into bar">
         <xpath expr="//div[@id='snippet_structure']/div[@class='o_panel_body']" position="inside">
             <t t-snippet="theme_mint_system.s_text_form" t-thumbnail="/website/static/src/img/snippets_thumbs/s_text_image.png"/>
         </xpath>
