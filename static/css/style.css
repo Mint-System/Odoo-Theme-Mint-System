@@ -197,7 +197,6 @@ p {
     line-height: 1.4;
 }
 
-
 p.lead {
     color: var(--primary-color);
     font-family: RubrikEdgeNewLight, sans-serif;
@@ -328,6 +327,11 @@ a.btn-outline-primary:hover::before {
     line-height: 1.2;
 }
 
+.website_blog .o_wblog_read_text .lead {
+    font-size: var(--font-size-header4);
+    line-height: 1.6;
+}
+
 .website_blog #o_wblog_posts_loop .o_wblog_normalize_font {
     color: var(--text-dark-color);
     font-size: var(--font-size-text-small);
@@ -441,6 +445,26 @@ section.s_team .col-lg-4 {
     section.s_features_grid div[data-name="Box"] {
         min-height: 150px;
     }
+}
+
+/* LATEST POST LIST */
+
+section.s_latest_posts h1 {
+    font-family: RubrikEdgeNewLight, sans-serif;
+}
+
+section.s_latest_posts .s_latest_posts_post_title {
+    font-family: RubrikEdgeNewBold, sans-serif;
+    color: var(--text-dark-color);
+    font-size: var(--font-size-text);
+    line-height: 1.6;
+}
+
+section.s_latest_posts .s_latest_posts_post_subtitle {
+    font-family: RubrikEdgeNewLight, sans-serif;
+    color: var(--text-dark-color);
+    font-size: var(--font-size-text);
+    line-height: 1.6;
 }
 
 /* # COVER */
