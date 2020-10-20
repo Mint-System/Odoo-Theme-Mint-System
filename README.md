@@ -1,5 +1,9 @@
 # Odoo Theme: Mint System
 
+<img width="150" src="./static/description/icon.svg" />
+
+Odoo website theme for Mint System GmbH.
+
 ## Usage
 
 Download release from the GitHub page.
