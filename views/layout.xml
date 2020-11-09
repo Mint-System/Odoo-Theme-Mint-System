@@ -20,19 +20,20 @@
     </template>
 
     <!-- Customize footer  -->
-    <template id="custom_footer" inherit_id="website.layout" name="Footer">
-
-        <xpath expr="//div[@id='wrapwrap']/footer" position="attributes">
-            <attribute name="id">my_footer</attribute>
-        </xpath>
-
-        <xpath expr="//div[@id='footer']/section" position="before">
-            <div class="container">
+    <!-- <template id="custom_footer" inherit_id="website.layout" name="Footer">
+        <xpath expr="//div[@id='footer']/section/div/div" position="before">
+            <div class="row">
                 <img class="img-fluid o_we_custom_image logo" src="/theme_mint_system/static/img/logo.svg" />
             </div>
         </xpath>
-    </template>
+    </template> -->
 
+    <!-- Add analytics -->
+    <template id="plausible_analytics" inherit_id="website.layout">
+        <xpath expr="//div[@id='footer']" position="after">
+            <script async="true" defer="true" data-domain="mint-system.ch" src="https://plausible.io/js/plausible.js"></script>
+        </xpath>
+    </template>
 
     <!-- Override brand promotion  -->
     <template id="brand_promotion" inherit_id="web.brand_promotion" name="Brand Promotion">
