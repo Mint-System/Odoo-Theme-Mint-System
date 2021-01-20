@@ -15,7 +15,7 @@
     'website': "https://www.mint-system.ch",
     'license': 'AGPL-3',
     'category': 'Theme',
-    'version': '13.0.1.0.0',
+    'version': '13.0.1.0.1',
     'sequence': 120,
 
     'depends': ['website_blog','website_theme_install'],
