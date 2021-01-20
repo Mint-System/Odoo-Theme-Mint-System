@@ -53,6 +53,7 @@
 
     /* radius */
     --default-border-radius: 1rem;
+    --image-border-radius: 0.5rem;
     --button-border-radius: 2rem;
     --form-input-border-radius: 0.3rem;
 
@@ -71,7 +72,7 @@
 
     /* navbar sizes */
     --odoo-navbar-height: 46px;
-    --navbar-height: 100px;
+    --navbar-height: 95px;
 }
 
 /* # BASE */
@@ -315,6 +316,12 @@ a.btn-outline-primary:hover::before {
 
 /* # BLOG */
 
+.o_wblog_post_content_field h1,
+.o_wblog_post_content_field h2,
+.o_wblog_post_content_field h3 {
+    text-transform: none;
+}
+
 .website_blog .o_wblog_post_title #o_wblog_post_name {
     color: var(--primary-color);
     font-size: var(--font-size-header1);
@@ -396,11 +403,19 @@ div#o_wblog_blog_top .bg-secondary {
     opacity: 1 !important;
 }
 
+.o_wblog_social_links i {
+    color: var(--primary-color) !important;
+}
+
 /* # FEATURE */
 
 section.s_features img {
     margin-bottom: var(--padding-md);
     height: 150px;
+}
+
+.s_features_grid_content p {
+    margin-bottom: var(--margin-sm);
 }
 
 @media (min-width: 768px) {
@@ -467,6 +482,23 @@ section.s_latest_posts .s_latest_posts_post_subtitle {
     line-height: 1.6;
 }
 
+section.s_latest_posts .o_record_cover_image {
+    border-radius: var(--image-border-radius);
+}
+
+section.s_latest_posts .s_latest_posts_post_cover {
+    margin-right: var(--padding-sm);
+}
+
+section.s_latest_posts .row {
+    justify-content: center;
+}
+
+section.s_latest_posts div.s_latest_posts_post {
+    margin-bottom: var(--margin-md);
+    max-width: var(--breakpoint-min-md);
+}
+
 /* # COVER */
 
 section.s_cover p {
@@ -481,7 +513,6 @@ section.s_cover h1 {
 
 .parallax > .s_parallax_bg::after {
     background-image: url("/theme_mint_system/static/img/cover-overlay.svg");
-    opacity: 0.3;
     background-repeat: no-repeat;
     background-position: center;
 }
