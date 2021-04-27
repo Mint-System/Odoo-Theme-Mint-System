@@ -18,7 +18,7 @@
     'version': '14.0.1.0.0',
     'sequence': 120,
 
-    'depends': ['website_blog','website_theme_install'],
+    'depends': ['website_blog'],
 
     'data': [
         'views/layout.xml',
