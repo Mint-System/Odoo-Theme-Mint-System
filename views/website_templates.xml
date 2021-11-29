@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="option_header_brand_logo" inherit_id="website.placeholder_header_brand" name="option_header_brand_logo" priority="50">
+        <xpath expr="//a" position="replace">
+            <a href="/" t-attf-class="navbar-brand logo #{_link_class}">
+                <img src="/theme_mint_system/static/img/logo.svg" class="img img-fluid default" alt="Mint System" loading="lazy"/>
+                <!-- 
+                <img src="/theme_mint_system/static/img/logo-inverted.svg" class="img img-fluid inverted" alt="Mint System" loading="lazy"/>
+                <img src="/theme_mint_system/static/img/logo-overlay.svg" class="img img-fluid overlay" alt="Mint System" loading="lazy"/>
+                -->
+            </a>
+        </xpath>
+    </template>
+
+</odoo>

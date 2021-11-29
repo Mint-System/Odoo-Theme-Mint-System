@@ -26,7 +26,7 @@
 
     /* sizes */
     --link-border-size: 1px;
-    --nav-border-size: 3px;
+    --nav-border-size: 2px;
     --font-size-header1: 3rem; /* 48px */
     --font-size-header2: 2.5rem; /* 40px */
     --font-size-header3: 1.875rem; /* 30px */
@@ -461,6 +461,8 @@ section.s_image_text h1 {
 
 .navbar .nav-link {
     font-family: RubrikEdgeNewRegular, sans-serif;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .navbar-nav .nav-link span:hover {
@@ -470,6 +472,24 @@ section.s_image_text h1 {
 #wrapwrap.o_header_overlay > header:not(.o_header_affixed):not(.o_top_menu_collapse_shown) > .navbar .nav-item > .nav-link {
     color: var(--text-inverted-color)
 }
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--link-active-color);
+    border-bottom: var(--link-border-active-color) solid var(--nav-border-size);
+    padding-bottom: 0.2rem;
+}
+
+/* # LOGO */
+
+/* #wrapwrap.o_header_overlay a.logo img::after {
+    content:url("/theme_mint_system/static/img/logo-overlay.svg");
+}
+
+#wrapwrap:not(.o_header_overlay) a.logo img::after {
+    content:url("/theme_mint_system/static/img/logo.svg");
+} */
+
+/* header.o_header_is_scrolled */
 
 /* # SECTION INVERTED */
 
