@@ -4,81 +4,20 @@
     <!-- Customize header  -->
     <template id="custom_header" inherit_id="website.layout" name="Custom Header">
 
-        <!-- Assign an id  -->
-        <xpath expr="//div[@id='wrapwrap']/header" position="attributes">
-            <attribute name="id">my_header</attribute>
-        </xpath>
-
-        <xpath expr="//div[@id='wrapwrap']/header/nav/div/a" position="replace">
-            <a class="navbar-brand logo" href="/">
-                <img src="/theme_mint_system/static/img/logo.svg" class="img img-fluid default" alt="Mint System" />
-                <img src="/theme_mint_system/static/img/logo-inverted.svg" class="img img-fluid inverted" alt="Mint System" />
-                <img src="/theme_mint_system/static/img/logo-overlay.svg" class="img img-fluid overlay" alt="Mint System" />
-            </a>
-        </xpath>
-
     </template>
-
-    <!-- Customize footer  -->
-    <!-- <template id="custom_footer" inherit_id="website.layout" name="Footer">
-        <xpath expr="//div[@id='footer']/section/div/div" position="before">
-            <div class="row">
-                <img class="img-fluid o_we_custom_image logo" src="/theme_mint_system/static/img/logo.svg" />
-            </div>
-        </xpath>
-    </template> -->
 
     <!-- Add analytics -->
     <template id="plausible_analytics" inherit_id="website.layout">
-        <xpath expr="//div[@id='footer']" position="after">
-            <script async="true" defer="true" data-domain="mint-system.ch" src="https://plausible.io/js/plausible.js"></script>
-        </xpath>
+
     </template>
 
     <!-- Override brand promotion  -->
     <template id="brand_promotion" inherit_id="web.brand_promotion" name="Brand Promotion">
 
-        <!-- Clear brand promotion message -->
-        <xpath expr="//t[@t-call='web.brand_promotion_message']" position="replace">
-        </xpath>
-
     </template>
-
 
     <!-- Override blog fullwidth design  -->
     <template id="opt_blog_cover_post_fullwidth_design" inherit_id="website_blog.opt_blog_cover_post_fullwidth_design" name="Full-Width Cover">
-
-        <!-- Clear brand promotion message -->
-        <xpath expr="//div[hasclass('container')]" position="replace">
-            <t t-if="blog or first_post" t-call="website.record_cover">
-                <t t-set="_record" t-value="blog or first_post"/>
-                <t t-set="use_filters" t-value="True"/>
-                <t t-set="use_text_size" t-value="True"/>
-                <t t-set="use_text_align" t-value="True"/>
-                <t t-set="additionnal_classes" t-value="'o_wblog_post_page_cover o_record_has_cover cover_auto'"/>
-
-                <div class="container position-relative h-100 d-flex flex-column justify-content-around">
-                    <div t-attf-class="o_wblog_post_title #{'js_tweet' if opt_blog_post_select_to_tweet else ''} #{'js_comment' if opt_blog_post_select_to_comment else ''}">
-                        <div t-if="not date and not tag and not blog" class="h4 bg-gamma px-2 d-inline-block rounded-sm">Latest</div>
-                        <a t-if="not blog and first_post" t-attf-href="/blog/#{slug(first_post.blog_id)}/post/#{slug(first_post)}" t-att-title="first_post.name" class="text-white text-decoration-none">
-                            <div t-field="first_post.name" id="o_wblog_post_name" t-att-data-blog-id="first_post.id" placeholder="Blog Post Title"/>
-                            <div t-field="first_post.subtitle" id="o_wblog_post_subtitle"  placeholder="Subtitle"/>
-                        </a>
-                        <span t-elif="blog" t-att-title="blog.name"> <!-- class="text-white text-decoration-none">-->
-                            <div t-field="blog.name" id="o_wblog_post_name" placeholder="Blog Title"/>
-                            <div t-field="blog.subtitle" id="o_wblog_post_subtitle" placeholder="Blog Subtitle"/>
-                        </span>
-
-                        <div>
-                            <span t-if="not blog and blog_post" class="text-white small mt-2 mb-3">
-                                in <i class="fa fa-folder-open text-white-75"/><a t-attf-href="#{blog_url(blog=blog_post.blog_id)}" class="text-white" t-field="blog_post.blog_id"/>
-                            </span>
-                            <!-- <span t-else="">&amp;nbsp;</span> -->
-                        </div>
-                    </div>
-                </div>
-            </t>
-        </xpath>
 
     </template>
 </odoo>

@@ -1,21 +1,15 @@
-# -*- coding: utf-8 -*-
 {
     'name': "Mint System Theme",
 
     'summary': """
         Odoo website theme for Mint System GmbH.
     """,
-
-    'description': """
-        Odoo website theme for Mint System GmbH.
-    """,
     
-    'author': 'Mint System',
+    'author': 'Mint System GmbH, Odoo Community Association (OCA)',
     'website': 'https://www.mint-system.ch',
-    'website': "https://www.mint-system.ch",
     'license': 'AGPL-3',
     'category': 'Theme',
-    'version': '14.0.1.0.0',
+    'version': '14.0.2.0.0',
     'sequence': 120,
 
     'depends': ['website_blog'],
