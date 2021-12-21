@@ -213,10 +213,6 @@ ul > li {
     line-height: 1.2;
 }
 
-li > p {
-    line-height: 0;
-}
-
 small {
     color: var(--text-grey-color);
     font-size: var(--font-size-text-small);
