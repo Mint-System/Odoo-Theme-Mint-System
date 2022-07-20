@@ -198,6 +198,10 @@ p {
     line-height: 1.4;
 }
 
+p .b, p strong {
+    font-family: RubrikEdgeNewBold, sans-serif;
+}
+
 p.lead {
     color: var(--primary-color);
     font-family: RubrikEdgeNewLight, sans-serif;
