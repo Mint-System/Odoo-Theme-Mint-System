@@ -223,10 +223,6 @@ small {
     line-height: 1.2;
 }
 
-address {
-    font-size: var(--font-size-text-small);
-}
-
 /* # LINKS */
 
 header a,
