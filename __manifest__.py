@@ -3,7 +3,7 @@
     "summary": """
         Odoo website theme for Mint System GmbH.
     """,
-    "author": "Mint System GmbH, Odoo Community Association (OCA)",
+    "author": "Mint System GmbH",
     "website": "https://www.mint-system.ch",
     "license": "AGPL-3",
     "category": "Theme",
